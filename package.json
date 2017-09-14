@@ -1,0 +1,22 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "Electron App quick start",
+  "main": "./src/main/main.js",
+  "scripts": {
+    "start": "electron .",
+    "packageLinux": "electron-packager ./src 'App' --platform=linux --arch=x64 --out=./dist --asar --app-version=2.0.1 --overwrite --ignore=\"(dist|src|docs|.gitignore|LICENSE|README.md|webpack.config.js|node_modules)\"",
+    "packageDarwin": "electron-packager ./src 'App' --platform=darwin --arch=x64 --icon=./src/_config/icon.icns --out=./dist --asar --app-version=2.0.1 --overwrite --ignore=\"(dist|src|docs|.gitignore|LICENSE|README.md|webpack.config*|node_modules)\"",
+    "packageWin": "electron-packager ./src 'App' --platform=win32 --arch=x64 --icon=./src/_config/icon.ico --out=./dist --asar --app-version=2.0.1 --overwrite --ignore=\"(dist|src|docs|.gitignore|LICENSE|README.md|webpack.config.js|node_modules)\""
+  },
+  "repository": "",
+  "keywords": [""],
+  "author": "JasonJCPeng",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-packager": "^9.0.1"
+  },
+  "dependencies": {
+    "electron": "^1.6.13"
+  }
+}
