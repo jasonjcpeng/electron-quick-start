@@ -15,7 +15,7 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.
-  let mainWindow = new BrowserWindow({show: false})
+  let mainWindow = new BrowserWindow({show: false,frame: false})
   mainWindow.maximize()
   mainWindow.once('ready-to-show', () => {
     mainWindow.show()
